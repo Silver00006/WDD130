@@ -1,0 +1,22 @@
+/*CSS*/
+
+body {
+    background-color: aqua;
+}
+.nav-link {
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+img {
+    width: 300px;
+}
+a {
+    color: black;
+}
+#main-title {
+    font-size: 4em;
+}
+#subtitle {
+    color: red;
+}
