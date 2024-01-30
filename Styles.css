@@ -1,25 +1,28 @@
 /*CSS*/
 
 body {
-    background-color: lightblue;
+    background-color: white;
 }
-nav{
+nav {
     display: flex;
     justify-content: center;
 }
-.nav-link{
+.nav-link {
     padding: 10px;
     font-size: 1.3em;
     text-decoration: none;
+    text-align: center;
 }
-
+main {
+    background-color: aqua;
+}
 img {
     width: 300px;
 }
 a {
     color: black;
 }
-a:hover{
+a:hover {
     color:navy;
     background-color: aliceblue;
 }
