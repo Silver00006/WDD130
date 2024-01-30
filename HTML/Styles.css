@@ -1,0 +1,31 @@
+/*CSS*/
+
+body {
+    background-color: lightblue;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.nav-link{
+    padding: 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+img {
+    width: 300px;
+}
+a {
+    color: black;
+}
+a:hover{
+    color:navy;
+    background-color: aliceblue;
+}
+#main-title {
+    font-size: 4em;
+}
+#subtitle {
+    color: red;
+}
