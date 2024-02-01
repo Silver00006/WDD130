@@ -1,0 +1,50 @@
+/*CSS*/
+
+body{
+    background-color: #5ca0d7;
+
+}
+main {
+    background-color: #5ca0d7;
+}
+div {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+#main-title {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+#subtitle {
+    font-size: small;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+p {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+#traits {
+    font-weight: bold;
+}
+img {
+    width: 150px;
+    display: block;
+    margin:0 auto;
+}
+#quote {
+    font-size:xx-large;
+}
+#closer {
+    color:black;
+    text-align: center;
+    font-size: small;
+
+}
+#main-title:hover {
+    color:black;
+}
