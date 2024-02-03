@@ -14,3 +14,20 @@ header {
     max-width: 100%;
     height: auto;
 }
+section {
+    text-align: center;
+}
+main {
+    text-align: center;
+    display: block;
+}
+.icon {
+    max-width: 100px;
+    max-height: 100px;
+}
+footer {
+    background-color: green;
+}
+.msg {
+    text-align: center;
+}
