@@ -1,1 +1,16 @@
 /*CSS*/
+
+.logo {
+    width: 50px;
+}
+header {
+    background-color: rgb(56, 95, 27);
+    margin: 0px;
+}
+.links {
+    color: aliceblue;
+}
+#hero-box img {
+    max-width: 100%;
+    height: auto;
+}
