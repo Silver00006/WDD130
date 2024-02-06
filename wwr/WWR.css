@@ -28,6 +28,10 @@ main {
 footer {
     background-color: green;
 }
+#background {
+    height: 725px;
+    background-color: greenyellow;
+}
 .msg {
     text-align: center;
 }
