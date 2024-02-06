@@ -26,6 +26,9 @@ a:hover {
     color:navy;
     background-color: aliceblue;
 }
+img {
+    border-radius: 50%;
+}
 #main-title {
     font-size: 4em;
 }
