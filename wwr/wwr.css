@@ -1,5 +1,19 @@
 /*CSS*/
 
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav-link {
+    padding: 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-align: center;
+}
+nav.hover {
+    color:navy;
+    background-color: aliceblue;
+}
 .logo {
     width: 50px;
 }
