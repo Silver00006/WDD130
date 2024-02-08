@@ -4,13 +4,13 @@ nav {
     display: flex;
     justify-content: center;
 }
-nav-link {
+.nav-link {
     padding: 10px;
     font-size: 1.3em;
     text-decoration: none;
     text-align: center;
 }
-nav.hover {
+a.hover {
     color:navy;
     background-color: aliceblue;
 }
