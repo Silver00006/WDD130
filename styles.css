@@ -18,6 +18,13 @@ main {
 }
 img {
     width: 300px;
+    box-shadow: 15px 15px 25px grey;
+    transition: transform .5s;
+    border-radius: 0%;
+}
+img.hover {
+    opacity: .6;
+    transform: scale(2.2);
 }
 a {
     color: black;
@@ -25,9 +32,6 @@ a {
 a:hover {
     color:navy;
     background-color: aliceblue;
-}
-img {
-    border-radius: 0%;
 }
 #main-title {
     font-size: 4em;
