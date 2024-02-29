@@ -25,9 +25,11 @@ nav {
     margin: 0%;
     text-align: center;
     text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .flink:hover,.join:hover,.book:hover,.links:hover {
-    color:navy;
+    color:blue;
     background-color: aliceblue;
     margin: 0%;
 }
