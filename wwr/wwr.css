@@ -24,6 +24,7 @@ nav {
     font-size: large;
     margin: 0%;
     text-align: center;
+    text-decoration: none;
 }
 .flink:hover,.join:hover,.book:hover,.links:hover {
     color:navy;
