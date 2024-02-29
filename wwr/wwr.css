@@ -130,6 +130,10 @@ footer {
     color: rgb(218,195,164);
     background-color: green;
 }
+footer .social a:hover {
+    background-color: green;
+    padding: 0%;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
