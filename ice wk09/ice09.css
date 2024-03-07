@@ -1,0 +1,11 @@
+/* CSS */
+/* Week 9 ICE Challenge */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+body {
+    margin: 0%;
+    grid-column: 1/2;
+}
