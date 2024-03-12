@@ -27,9 +27,33 @@ a.links {
     color: orange;
     background-color: #e9f2f5;
 }
-#logo-img img{
-    width: 300px;
-}
 body {
     margin: 0%;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+}
+p {
+    grid-column: 2/3;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: blue;
+}
+.logo {
+    grid-row: 1/2;
+    width: 300px;
+    height: auto;
+}
+footer a {
+    width: 300px;
+}
+.social {
+    justify-content: center;
 }
