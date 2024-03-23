@@ -56,4 +56,5 @@ footer a {
 }
 .social {
     justify-content: center;
+    align-self: center;
 }
