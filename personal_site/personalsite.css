@@ -13,19 +13,19 @@ header {
     margin: 0%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: blue;
+    background-color: #3A57FF;
 }
 a.links {
     padding: 3%;
     align-self: center;
-    color: blue;
+    color: #3A57FF;
     background-color: orange;
     text-decoration: none;
     border-radius: 30%;
 }
 .links:hover {
     color: orange;
-    background-color: #e9f2f5;
+    background-color: #3A57FF;
 }
 body {
     margin: 0%;
@@ -44,7 +44,9 @@ p {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: blue;
+    background-color: #3A57FF;
+    justify-content: center;
+    align-items: center;
 }
 .logo {
     grid-row: 1/2;
@@ -54,9 +56,8 @@ footer {
 footer a {
     width: 300px;
 }
-.social {
-    justify-content: center;
-    align-self: center;
+footer p {
+    color: white;
 }
 .modal {
     display: none; /* Hidden by default */
