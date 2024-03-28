@@ -21,24 +21,23 @@
     </nav>
 </header>
 <body>
-    <button class="myBtn">Magic Summons</button>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-    <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Pop up box text</p>
-      </div>
-    </div>
     <button class="myBtn">Magic Attacks</button>
     <!-- The Modal -->
     <div id="myModal" class="modal">
     <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Explination of How Attack Magic works in Genesys</p>
+            <p class="text">Gone</p>
+            <img class="image" src="" alt="">
       </div>
     </div>
+    <button class="myBtn">Magic Utility</button>
+    <button class="myBtn">Magic Healing</button>
+    <button class="myBtn">Magic Dispel</button>
+    <button class="myBtn">Magic Curse</button>
+    <button class="myBtn">Magic Conjure</button>
+    <button class="myBtn">Magic Barrier</button>
+    <button class="myBtn">Magic Augment</button>
 </body>
 <footer>
     <a id="logo_img2" href="index.html">
@@ -62,23 +61,51 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.querySelectorAll(".myBtn");
-
+var text = document.querySelector(".text");
+var image = document.querySelector(".image")
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close");
-
+var span = document.querySelector(".close");
+console.log(modal);
 // When the user clicks on the button, open the modal
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 8; i++) {
     btn[i].addEventListener('click', function () {
     modal.style.display = "block";
+    switch(i) {
+        case 0:
+            text.innerHTML = "Attack \n Can be used by any Magic Type. ";
+            image.src = "styles/attacks.png";
+            break;
+        case 1:
+            text.innerHTML = "Utility \n Can be used by any Magic Type";
+            image.src = "styles/boom.jpg"
+            break;
+        case 2:
+            text.innerHTML = "Healing \n Can only be used by Divine and Primal Magics";
+            break;
+        case 3:
+            text.innerHTML = "Dispel \n Can only be used by Arcane Magics";
+            break;
+        case 4:
+            text.innerHTML = "Curse \n Can only be used by Acane and Divine Magics";
+            break;
+        case 5:
+            text.innerHTML = "Conjure \n Can only be used by Arcane and Primal Magics";
+            break;
+        case 6:
+            text.innerHTML = "Barrier \n Can only be used by Arcane and Divine Magics";
+            break;
+        case 7:
+            text.innerHTML = "Augment \n Can only be used by Divine and Primal Magics";
+            break;
+    }
 })
 }
 
 // When the user clicks on <span> (x), close the modal
-for (let i = 0; i < 2; i++) {
-    span[i].addEventListener('click', function () {
+    span.addEventListener('click', function () {
     modal.style.display = "none";
 })
-}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
