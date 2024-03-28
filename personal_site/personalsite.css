@@ -36,7 +36,8 @@ main {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: orange;
+    background-color: orange;   
+    padding: 150px;
 }
 p {
     grid-column: 2/3;
