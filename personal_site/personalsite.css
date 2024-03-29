@@ -13,19 +13,19 @@ header {
     margin: 0%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: #3A57FF;
+    background-color: #233495;
 }
 a.links {
     padding: 3%;
     align-self: center;
-    color: #3A57FF;
-    background-color: orange;
+    color: #233495;
+    background-color: #fae0c2;
     text-decoration: none;
     border-radius: 30%;
 }
 .links:hover {
-    color: orange;
-    background-color: #3A57FF;
+    color: #fae0c2;
+    background-color: #233495;
 }
 body {
     margin: 0%;
@@ -36,7 +36,7 @@ main {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: orange;   
+    background-color: #fae0c2;   
     padding: 150px;
 }
 p {
@@ -45,7 +45,7 @@ p {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #3A57FF;
+    background-color: #233495;
     justify-content: center;
     align-items: center;
 }

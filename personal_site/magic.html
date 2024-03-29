@@ -17,7 +17,7 @@
         <img class="logo1" src="styles/logo.png" alt="Genesys Logo">
         </a>
         <a class="links" href="https://silver00006.github.io/WDD130/personal_site/weapon.html">Weapon Traits</a>
-        <a class="links" href="https://silver00006.github.io/WDD130/personal_site/armor.html">Armor Traits</a>
+        <a class="links" href="https://silver00006.github.io/WDD130/personal_site/create.html">Creation</a>
     </nav>
 </header>
 <body>
@@ -31,13 +31,13 @@
             <img class="image" src="" alt="">
       </div>
     </div>
-    <button class="myBtn">Magic Utility</button>
     <button class="myBtn">Magic Healing</button>
     <button class="myBtn">Magic Dispel</button>
     <button class="myBtn">Magic Curse</button>
     <button class="myBtn">Magic Conjure</button>
     <button class="myBtn">Magic Barrier</button>
     <button class="myBtn">Magic Augment</button>
+    <button class="myBtn">Magic Utility</button>
 </body>
 <footer>
     <a id="logo_img2" href="index.html">
@@ -72,30 +72,36 @@ for (let i = 0; i < 8; i++) {
     modal.style.display = "block";
     switch(i) {
         case 0:
-            text.innerHTML = "Attack \n Can be used by any Magic Type. ";
+            text.innerHTML = "Attack \n Can be used by any Magic Type. Attack Magic Starts at Easy Difficulty and Short Range. Damage is calculated as the skill linked to the skill +1 for any uncanceled Successes, it has no Critical rating, and only inflicts a Critical Injury on a Triumph. Does not require Concentration.";
             image.src = "styles/attacks.png";
             break;
         case 1:
-            text.innerHTML = "Utility \n Can be used by any Magic Type";
-            image.src = "styles/boom.jpg"
+            text.innerHTML = "Healing \n Can only be used by Divine and Primal Magics. Healing Magic begins at Easy difficulty upon a success, the target is healed for 1 wound for each uncanceled success, and 1 strain for each uncanceled advantage.";
+            image.src = "styles/heal.png";
             break;
         case 2:
-            text.innerHTML = "Healing \n Can only be used by Divine and Primal Magics";
+            text.innerHTML = "Dispel \n Can only be used by Arcana Magics. You must sekect ibe target within short range that is under the effects of a spell, the defult check is a Hard Arcana check. If successful";
+            image.src = "styles/dispel.png";
             break;
         case 3:
-            text.innerHTML = "Dispel \n Can only be used by Arcane Magics";
+            text.innerHTML = "Curse \n Can only be used by Acana and Divine Magics. Select one target within short range, then make a Divine or Arcana check. Base Difficulty is Average. When successful the target loses one Ability Die from each check. This requires concentration.";
+            image.src = "styles/curse.png";
             break;
         case 4:
-            text.innerHTML = "Curse \n Can only be used by Acane and Divine Magics";
+            text.innerHTML = "Conjure \n Can only be used by Arcana and Primal Magics. The character must make a Easy Primal or Acana check. If successful the character summons a simple tool with no moving parts (such as a shovel), a one-handed melee weapon with no moving parts (such as a sword), or a minion no bigger than silhouette 1. The summoned appears engaged with the character. This require Concentration.";
+            image.src = "styles/conjure.png";
             break;
         case 5:
-            text.innerHTML = "Conjure \n Can only be used by Arcane and Primal Magics";
+            text.innerHTML = "Barrier \n Can only be used by Arcana and Divine Magics. The character selects one target they are engaged with (which can be themself), then makes a Easy Divine or Arcana check. If successful, until the character's next turn reduce damage of all hits the target suffers by 1, and further reduce it by 1 for every uncanceled pair of successes beyond the first. This requires Concentration.";
+            image.src = "styles/barrier.png";
             break;
         case 6:
-            text.innerHTML = "Barrier \n Can only be used by Arcane and Divine Magics";
+            text.innerHTML = "Augment \n Can only be used by Divine and Primal Magics. Character selects one target they are engaged with (Can be self), then make a Primal or Divine check, base difficulty is Average. If successful, until your next turn, or until you lose concentration, the target increases the ability of any skill check y one ability die.";
+            image.src = "styles/augment.png";
             break;
         case 7:
-            text.innerHTML = "Augment \n Can only be used by Divine and Primal Magics";
+            text.innerHTML = "Utility \n Can be used by any Magic Type. Utility Magic is anything not covered by one of the other actions of magic. It do things such as levitate objects, to transumting things, or Detecting Magic. Utility Magic begins at Easy difficulty, but is up to the Game Master's discression on any addional difficulty dice. If an Easy check seems too easy for what you hope to accomplish, it might not work with Utility Magic.";
+            image.src = "styles/fly.jpg"
             break;
     }
 })
