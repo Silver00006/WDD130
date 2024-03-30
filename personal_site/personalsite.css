@@ -29,6 +29,7 @@ a.links {
 }
 body {
     margin: 0%;
+    background-color: #FAE0C2;
 }
 main {
     display: grid;
@@ -38,6 +39,22 @@ main {
     justify-content: center;
     background-color: #fae0c2;   
     padding: 150px;
+}
+h1, p {
+    text-align: center;
+}
+.myBtn {
+    text-align: center;
+    justify-self: center;
+}
+.kaboom {
+    height: 300px;
+    width: auto;
+}
+.bazap {
+    height: 200px;
+    width: auto;
+    padding-bottom: 2%;
 }
 p {
     grid-column: 2/3;
