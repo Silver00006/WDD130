@@ -1,0 +1,130 @@
+<!--HTMl-->
+<!--Magic Spells Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesys Information</title>
+    <link href="personalsite.css" rel="stylesheet">
+</head>
+<header>
+    <nav>
+        <a class="links" href="https://silver00006.github.io/WDD130/personal_site/index.html">Home</a>
+        <a class="links" href="https://silver00006.github.io/WDD130/personal_site/magic.html">Magic Spells</a>
+        <a id="logo_img" href="index.html">
+        <img class="logo1" src="styles/logo.png" alt="Genesys Logo">
+        </a>
+        <a class="links" href="https://silver00006.github.io/WDD130/personal_site/weapon.html">Weapon Traits</a>
+        <a class="links" href="https://silver00006.github.io/WDD130/personal_site/create.html">Creation</a>
+    </nav>
+</header>
+<body>
+    <h1>Welcome Warriors! This page will provide a basic Overview of how Weapons works in Genesys.</h1>
+    <p>There are 8 different combat skills. There is Brawl, Gunnery, Melee, Melee-Light, Melee-Heavy, Ranged, Ranged-Light, and Ranged Heavy.</p>
+    <p>Each weapon will relate to a different combat skill. Up to the GM's discression, they may have you use just Melee instead of Melee-Light and Melee-Heavy. And the same with Ranged.</p>
+    <img class="kaboom" src="styles/dual.png" alt="explosion">
+    <button class="myBtn">Magic Attacks</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="text">Gone</p>
+            <img class="image" src="" alt="">
+      </div>
+    </div>
+    <button class="myBtn">Magic Healing</button>
+    <button class="myBtn">Magic Dispel</button>
+    <button class="myBtn">Magic Curse</button>
+    <button class="myBtn">Magic Conjure</button>
+    <button class="myBtn">Magic Barrier</button>
+    <button class="myBtn">Magic Augment</button>
+    <button class="myBtn">Magic Utility</button>
+    <img class="bazap" src="styles/dagger.png" alt="zap">
+</body>
+<footer>
+    <a id="logo_img2" href="index.html">
+        <img class="logo" src="styles/logo.png" alt="Genesys Logo">
+    </a>
+    <p>Copyright &copy;</p>
+    <div class="social">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="../images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="../images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="../images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+    <script>
+        // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.querySelectorAll(".myBtn");
+var text = document.querySelector(".text");
+var image = document.querySelector(".image")
+// Get the <span> element that closes the modal
+var span = document.querySelector(".close");
+console.log(modal);
+// When the user clicks on the button, open the modal
+for (let i = 0; i < 8; i++) {
+    btn[i].addEventListener('click', function () {
+    modal.style.display = "block";
+    switch(i) {
+        case 0:
+            text.innerHTML = "Attack \n Can be used by any Magic Type. Attack Magic Starts at Easy Difficulty and Short Range. Damage is calculated as the skill linked to the skill +1 for any uncanceled Successes, it has no Critical rating, and only inflicts a Critical Injury on a Triumph. Does not require Concentration.";
+            image.src = "styles/attacks.png";
+            break;
+        case 1:
+            text.innerHTML = "Healing \n Can only be used by Divine and Primal Magics. Healing Magic begins at Easy difficulty upon a success, the target is healed for 1 wound for each uncanceled success, and 1 strain for each uncanceled advantage.";
+            image.src = "styles/heal.png";
+            break;
+        case 2:
+            text.innerHTML = "Dispel \n Can only be used by Arcana Magics. You must sekect ibe target within short range that is under the effects of a spell, the defult check is a Hard Arcana check. If successful";
+            image.src = "styles/dispel.png";
+            break;
+        case 3:
+            text.innerHTML = "Curse \n Can only be used by Acana and Divine Magics. Select one target within short range, then make a Divine or Arcana check. Base Difficulty is Average. When successful the target loses one Ability Die from each check. This requires concentration.";
+            image.src = "styles/curse.png";
+            break;
+        case 4:
+            text.innerHTML = "Conjure \n Can only be used by Arcana and Primal Magics. The character must make a Easy Primal or Acana check. If successful the character summons a simple tool with no moving parts (such as a shovel), a one-handed melee weapon with no moving parts (such as a sword), or a minion no bigger than silhouette 1. The summoned appears engaged with the character. This require Concentration.";
+            image.src = "styles/conjure.png";
+            break;
+        case 5:
+            text.innerHTML = "Barrier \n Can only be used by Arcana and Divine Magics. The character selects one target they are engaged with (which can be themself), then makes a Easy Divine or Arcana check. If successful, until the character's next turn reduce damage of all hits the target suffers by 1, and further reduce it by 1 for every uncanceled pair of successes beyond the first. This requires Concentration.";
+            image.src = "styles/barrier.png";
+            break;
+        case 6:
+            text.innerHTML = "Augment \n Can only be used by Divine and Primal Magics. Character selects one target they are engaged with (Can be self), then make a Primal or Divine check, base difficulty is Average. If successful, until your next turn, or until you lose concentration, the target increases the ability of any skill check y one ability die.";
+            image.src = "styles/augment.png";
+            break;
+        case 7:
+            text.innerHTML = "Utility \n Can be used by any Magic Type. Utility Magic is anything not covered by one of the other actions of magic. It do things such as levitate objects, to transumting things, or Detecting Magic. Utility Magic begins at Easy difficulty, but is up to the Game Master's discression on any addional difficulty dice. If an Easy check seems too easy for what you hope to accomplish, it might not work with Utility Magic.";
+            image.src = "styles/fly.jpg"
+            break;
+    }
+})
+}
+
+// When the user clicks on <span> (x), close the modal
+    span.addEventListener('click', function () {
+    modal.style.display = "none";
+})
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</footer>
+
+</html>

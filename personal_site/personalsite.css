@@ -46,6 +46,7 @@ h1, p {
 .myBtn {
     text-align: center;
     justify-self: center;
+    margin-bottom: 100px;
 }
 .kaboom {
     height: 300px;
