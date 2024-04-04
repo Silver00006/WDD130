@@ -60,6 +60,9 @@ h1, p {
     grid-column: 1/2;
     grid-row: 2/3;
 }
+#vicious {
+    grid-column: 2/3;
+}
 .buttons {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
