@@ -45,6 +45,7 @@ h1, p {
 }
 .myBtn {
     text-align: center;
+    height: 35px;
 }
 .dual {
     height: 200px;
